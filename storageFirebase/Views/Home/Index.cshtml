@@ -1,8 +1,22 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Carga de Archivos";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome Dev</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Cargar archivos a Firebase</a>.</p><br/>
+
+    <form asp-action="SubirArchivo" method="post" enctype="multipart/form-data"> 
+
+        <div class="form-group">
+            <label for="archivo">Seleccione el archivo a cargar</label>
+            <input type="file" class="form-control" id="archivo" name="archivo">
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2">Subir Archivo</button>
+
+    </form>
+
+    <br/>
+   
 </div>
